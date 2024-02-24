@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Costa</title>
   <style type="text/css">
-    /*
     body {
-    	background-color: #0033FF;
+      background-color: #47c047;
     }
+
     .Estilo1 {
-    	color: #00FF33;
-    	font-weight: bold;
+      background-color: #33dd20;
+      color: #2c2910;
+      font-size: 16px;
+      font-weight: normal;
     }
+
+    /*
     .Estilo4 {
     	color: #FFFFFF;
     	font-size: 36px;
     	font-weight: bold;
     }
     */
+
+    .Estilo4 {
+      background-color: #33dd20;
+      color: #2e5a2e;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    embed:focus {
+      outline: none;
+    }
+
+    .AudioStyle {
+      background-color: #776f22;
+      font-style: italic;
+      color: aqua;
+    }
   </style>
 </head>
 
 <body>
-  <p>
-    <marquee bgcolor="#FF0000">
-    <span class="Estilo4">LA  COSTA</span>
-  </marquee></p>
-    <span class="Estilo1">La  costa peruana es una estrecha franja de tierra de 2250 Km de longitud que ocupa  un 11 %  de la superficie del país albergando  al mismo tiempo un 44% de su población! Es el corazón económico del país,  siendo en efecto que de esta región proceden la mitad la mitad de las  exportaciones del Perú.</span></p>
-  <table width="379" height="267" border="1" align="center">
+  <marquee class="Estilo4" scrolldelay="300" direction="up" hspace="0">
+    <div>
+      <strong>LA COSTA</strong>
+    </div>
+  </marquee>
+
+  <table width="800" height="100" border="1" align="center">
+    <th colspan="3" class="AudioStyle">
+      "Marinera Norteña 'La Concheperla"
+      <div id="audio" align="center">
+        <audio controls autoplay preload="auto" loop>
+          <source src="audio/Marinera Norteña 'La Concheperla'.mp3" type="audio/mp3">
+          Tu navegador no soporta la etiqueta audio
+        </audio>
+      </div>
+    </th>
+
     <tr>
-      <td><div align="center"><img src="img/costa 2.jpg" width="259" height="194" /></div></td>
-      <td><div align="center"><img src="img/costa 3.jpg" width="278" height="173" /></div></td>
+      <td colspan="1" rowspan="2" align="center" class="Estilo1" >
+        <strong style="font-size: 30px;">Costa</strong>
+        <div >
+          La costa peruana es una estrecha franja de tierra de 2250 Km de
+          longitud que ocupa un 11 %  de la superficie del país albergando
+          al mismo tiempo un 44% de su población! Es el corazón económico
+          del país, siendo en efecto que de esta región proceden la mitad
+          la mitad de las exportaciones del Perú.
+        </div>
+        <img src="img/costa 1.bmp" width="270" height="170" />
+      </td>
+      <td>
+        <div align="center"><img src="img/costa 2.jpg" width="270" height="170" /></div>
+      </td>
+      <td>
+        <div align="center"><img src="img/costa 3.jpg" width="270" height="170" /></div>
+      </td>
     </tr>
+
     <tr>
-      <td><div align="center"><img src="img/costa 4.jpg" width="275" height="183" /></div></td>
-      <td><div align="center"><img src="img/costa 5.jpg" width="300" height="168" /></div></td>
+      <td>
+        <div align="center"><img src="img/costa 4.jpg" width="270" height="170" /></div>
+      </td>
+      <td>
+        <div align="center"><img src="img/costa 5.jpg" width="270" height="170" /></div>
+      </td>
     </tr>
   </table>
-  <embed src="Música Peruana Marinera Norteña Trujillana'La Concheperla'.mp3" width="319" height="66" align="middle"></embed>
+
+  <!--Se podria haber usado la etiqueta embed para reproducir el audio
+  pero al tratarse de un archivo de audio es mejor usar la etiqueta audio-->
+  <!--embed type="audio/mp3" width="800px" height="60px" src="audio/Marinera Norteña 'La Concheperla'.mp3" width="319" height="66" align="middle"></embed-->
+  <!--div id="audio" align="center">
+    <audio controls autoplay preload="auto">
+      <source src="audio/Marinera Norteña 'La Concheperla'.mp3" type="audio/mp3">
+      Tu navegador no soporta la etiqueta audio
+    </audio>
+  </div-->
+
 </body>
+
 </html>

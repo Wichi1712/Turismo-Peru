@@ -17,6 +17,8 @@ function actionBtnCosta() {
 }
 
 function actionBtnSierra() {
+	//Se obtiene el elemento con el ID Sierra
+	//Se guarda en la variable aSierra y se cambia su atributo href
 	var aSierra = document.getElementById("sierra").href = "sierra.html";
 }
 

@@ -1,43 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin t&iacute;tulo</title>
-<style type="text/css">
-<!--
-.Estilo1 {
-	font-size: 36;
-	color: #FFFFFF;
-}
-body {
-	background-color: #003366;
-}
-.Estilo3 {font-size: 24px}
--->
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Documento sin t&iacute;tulo</title>
+  <style type="text/css">
+    .Estilo1 {
+      font-size: 36;
+      color: #FFFFFF;
+    }
+
+    body {
+      background-color: #b97816;
+    }
+
+    .Estilo3 {
+      background-color: darkgreen;
+      font-size: 24px
+    }
+
+    .AudioStyle {
+      background-color: #7a4e31;
+      font-style: italic;
+      color: aqua;
+    }
+  </style>
 </head>
 
 <body>
-<p align="center"><span class="Estilo3">
-  <marquee bgcolor="#0066FF">
-  <strong>LA SELVA</strong>
-    </marquee>
-</span></p>
-<table width="817" height="194" border="1" align="center">
-  <tr>
-    <td><div align="center"><img src="selva 1.jpg" width="258" height="195" /></div></td>
-    <td><div align="center"><img src="selva 2.jpg" width="253" height="199" /></div></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div align="justify"><span class="Estilo1">La Amazonia peruana es la zona de la selva amazónica, incluida en el territorio del Perú , desde el este de los andes a las fronteras con Ecuador , Colombia, Brasil y Bolivia. Esta región comprende el 60 % del país y se caracteriza por su alto grado de biodiversidad. Perú tiene la segunda mayor porción de la selva amazónica después de la Amazonia Brasileña.</span></div></td>
-  </tr>
-  <tr>
-    <td><div align="center"><img src="selva 3.jpg" width="275" height="183" /></div></td>
-    <td><div align="center"><img src="selva 4.jpg" width="274" height="184" /></div></td>
-  </tr>
-</table>
-<p> 
-  <embed src="Música Peruana'El Shipibo'Danza Selvática.mp3" width="816" height="60" align="absmiddle"></embed>
-</p>
+  <marquee behavior="alternate bgcolor="#0066FF" class="Estilo3" scrolldelay="300" hspace="0">
+    <strong>LA SELVA</strong>
+  </marquee>
+
+  <table width="800" height="100" border="1" align="center">
+    <th colspan="3" class="AudioStyle">
+      "El Shipibo'Danza Selvática"
+      <div>
+        <audio controls autoplay preload="auto" loop>
+          <source src="audio/Música Peruana'El Shipibo'Danza Selvática.mp3" type="audio/mp3">
+          Tu navegador no soporta la etiqueta audio
+        </audio>
+      </div>
+    </th>
+
+    <tr>
+      <td>
+        <div align="center"><img src="img/selva 1.jpg" width="270" height="170" /></div>
+      </td>
+
+      <td colspan="1" rowspan="2" align="center" class="Estilo1">
+        <strong style="font-size: 30px;">Selva</strong>
+        <div>
+          La Amazonia peruana es la zona de la selva amazónica, incluida en el
+          territorio del Perú , desde el este de los andes a las fronteras con Ecuador , Colombia, Brasil y Bolivia.
+          Esta región comprende el 60 % del país y se caracteriza por su alto grado de biodiversidad. Perú tiene la
+          segunda mayor porción de la selva amazónica después de la Amazonia Brasileña.
+        </div>
+      </td>
+
+      <td>
+        <div align="center"><img src="img/selva 2.jpg" width="270" height="170" /></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div align="center"><img src="img/selva 3.jpg" width="270" height="170" /></div>
+      </td>
+
+      <td>
+        <div align="center"><img src="img/selva 4.jpg" width="270" height="170" /></div>
+      </td>
+    </tr>
+
+  </table>
+
+  <!--p>
+    <embed src="audio/Música Peruana'El Shipibo'Danza Selvática.mp3" width="700" height="60" align="absmiddle"></embed>
+  </p-->
 </body>
+
 </html>
